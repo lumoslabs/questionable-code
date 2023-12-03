@@ -1,0 +1,35 @@
+# OS
+.DS_Store
+
+# Log files
+*.log
+
+# Yarn
+.yarn/*
+!.yarn/cache
+!.yarn/patches
+!.yarn/plugins
+!.yarn/releases
+!.yarn/sdks
+!.yarn/versions
+
+# dot env - do not commit the main .env
+.env
+.env.local
+
+# IDEs & Editors
+.idea
+*.swp
+node_modules
+
+# smoke test NextJS build output
+smoke-test/.next
+
+# esbuild dist files for lambda builds
+packages/*/dist/*
+packages/*/lambda.js
+packages/*/lambda.js.map
+packages/*/out/*
+
+# CDK Files
+packages/aws-resources/cdk.out/*
