@@ -10,7 +10,7 @@
     "node": "16.15.0"
   },
   "scripts": {
-    "start:dev": "ts-node index.ts",
+    "start:dev": "nodemon index.ts",
     "format": "yarn prettier --write ."
   },
   "devDependencies": {
