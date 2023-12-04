@@ -1,20 +1,17 @@
 {
   "name": "questionable-code",
-  "packageManager": "yarn@3.3.0",
   "private": true,
-  "workspaces": [
-    "packages/*",
-    "apps/*"
-  ],
   "engines": {
     "node": "16.15.0"
   },
   "scripts": {
     "start:dev": "nodemon index.ts",
-    "format": "yarn prettier --write ."
+    "format": "yarn prettier --write .",
+    "lint": "eslint **/*.ts",
+    "test": "jest"
   },
   "devDependencies": {
-    "@types/jest": "^29.5.1",
+    "@types/jest": "^29.5.10",
     "@typescript-eslint/eslint-plugin": "^5.36.2",
     "@typescript-eslint/parser": "^5.36.2",
     "eslint": "^8.23.0",

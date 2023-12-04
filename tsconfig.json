@@ -1,0 +1,13 @@
+{
+  "compilerOptions": {
+    "baseUrl": ".",
+    "paths": {
+      "~/*": ["./*"]
+    }
+  },
+  "extends": "./tsconfigBase",
+  "include": ["."],
+  "ts-node": {
+    "require": ["tsconfig-paths/register"]
+  }
+}
